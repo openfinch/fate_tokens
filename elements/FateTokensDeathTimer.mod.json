@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Fate Tokens Death Timer",
+    "description": "How long a player is allowed to be dead before being banned.",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 86400
+  }
+}

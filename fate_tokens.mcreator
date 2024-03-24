@@ -1,0 +1,231 @@
+{
+  "mod_elements": [
+    {
+      "name": "Gravestone",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gravestone",
+      "metadata": {
+        "files": [
+          "src/main/java/sh/dip/mc/fate_tokens/block/GravestoneBlock.java",
+          "src/main/resources/assets/fate_tokens/models/block/gravestone.json",
+          "src/main/resources/assets/fate_tokens/blockstates/gravestone.json",
+          "src/main/java/sh/dip/mc/fate_tokens/block/entity/GravestoneBlockEntity.java",
+          "src/main/resources/assets/fate_tokens/models/item/gravestone.json"
+        ]
+      }
+    },
+    {
+      "name": "FateTokens",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fate_tokens",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "FateTokensEnabled",
+      "type": "gamerule",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fate_tokens_enabled",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "OnPlayerDeath",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_death",
+      "metadata": {
+        "files": [
+          "src/main/java/sh/dip/mc/fate_tokens/procedures/OnPlayerDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GravestoneOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gravestone_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/sh/dip/mc/fate_tokens/procedures/GravestoneOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FateTokensDeathTimer",
+      "type": "gamerule",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fate_tokens_death_timer",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
+    },
+    {
+      "name": "FateToken",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fate_token",
+      "metadata": {
+        "files": [
+          "src/main/java/sh/dip/mc/fate_tokens/item/FateTokenItem.java",
+          "src/main/resources/assets/fate_tokens/models/item/fate_token.json"
+        ]
+      }
+    },
+    {
+      "name": "GravestoneUpdateTick",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gravestone_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/sh/dip/mc/fate_tokens/procedures/GravestoneUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GravestoneBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gravestone_block_is_placed_by",
+      "metadata": {
+        "files": [
+          "src/main/java/sh/dip/mc/fate_tokens/procedures/GravestoneBlockIsPlacedByProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gamerule.fateTokensEnabled.description": "Enable the Fate Tokens mod",
+      "block.fate_tokens.gravestone": "Gravestone",
+      "gamerule.fateTokensDeathTimer.description": "How long a player is allowed to be dead before being banned.",
+      "item.fate_tokens.fate_token": "Fate Token",
+      "gamerule.fateTokensDeathTimer": "Fate Tokens Death Timer",
+      "gamerule.fateTokensEnabled": "Fate Tokens",
+      "item_group.fate_tokens.fate_tokens": "Fate Tokens"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "fate_tokens",
+    "modName": "Fate Tokens",
+    "version": "0.1.0",
+    "description": "Allows players to resurrect each other in Hardcore using Fate Tokens. Based on Minecraft S.O.S.",
+    "author": "hiddendip",
+    "websiteURL": "https://github.com/openfinch/fate_tokens",
+    "license": "MIT License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created by HiddenDip, using MCreator",
+    "modElementsPackage": "sh.dip.mc.fate_tokens",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

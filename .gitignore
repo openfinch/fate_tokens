@@ -1,0 +1,15 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+gradle.properties
+build/
+.settings/
+.mcreator/
+# MCreator generator ignores
+run/
+src/main/resources/assets/*/models/custom
+src/main/resources/assets/*/models/item
+src/main/resources/assets/*/textures/blocks
+src/main/resources/assets/*/textures/items
+src/main/resources/assets/*/textures/models/armor
+src/main/resources/assets/*/textures/*.png
+src/main/resources/assets/*/sounds

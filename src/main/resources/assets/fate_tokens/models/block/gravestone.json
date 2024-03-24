@@ -1,0 +1,10 @@
+{
+  "parent": "fate_tokens:custom/tombstone",
+  "textures": {
+    "all": "fate_tokens:block/mossycobble",
+    "particle": "fate_tokens:block/mossycobble",
+    "0": "fate_tokens:block/mossycobble",
+    "1": "fate_tokens:block/poppy"
+  },
+  "render_type": "solid"
+}

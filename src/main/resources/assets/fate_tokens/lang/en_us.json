@@ -1,0 +1,9 @@
+{
+  "gamerule.fateTokensEnabled.description": "Enable the Fate Tokens mod",
+  "block.fate_tokens.gravestone": "Gravestone",
+  "gamerule.fateTokensDeathTimer.description": "How long a player is allowed to be dead before being banned.",
+  "item.fate_tokens.fate_token": "Fate Token",
+  "gamerule.fateTokensDeathTimer": "Fate Tokens Death Timer",
+  "gamerule.fateTokensEnabled": "Fate Tokens",
+  "item_group.fate_tokens.fate_tokens": "Fate Tokens"
+}
