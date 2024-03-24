@@ -4,13 +4,13 @@ plugins {
 }
 
 version = '1.0'
-group = 'com.yourname.modid'
-archivesBaseName = 'modid'
+group = 'sh.dip.mc.fate_tokens'
+archivesBaseName = 'fate_tokens'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'official', version: '1.20.1'
+    mappings channel: 'official', version: System.getenv("MINECRAFT_VERSION") ?: "1.20.1"
 
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -46,7 +46,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+    minecraft System.getenv("FORGE_VERSION") ?: "net.minecraftforge:forge:1.20.1-47.2.0"
 }
 
 tasks.withType(JavaCompile).configureEach {
